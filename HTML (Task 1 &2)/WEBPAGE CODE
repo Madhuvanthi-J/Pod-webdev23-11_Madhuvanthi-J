@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Human Organs</title>
+    <link rel="icon" type="image/x-icon" href="c:\Users\Smile Always\Desktop\html\Rainbowdeserts\favicon.jpg">
+  </head>
+  <body style="background-color:powderblue;">
+  <main>
+    <h1>Human organs</h1><hr>
+    <h2>Heart</h2>
+    <section>
+      <figure>
+      <a href="https://commons.wikimedia.org/wiki/File:Diagram_of_the_human_heart_%28cropped%29.svg"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\hr.jpg" alt="Picture of Heart"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <h2>Brain</h2>
+    <section>
+      <figure>
+      <a href="https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-know-your-brain"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\br.jpg"alt="Picture of Brain"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <h2>Lungs</h2>
+    <section>
+      <figure>
+      <a href="https://www.vecteezy.com/vector-art/2803163-illustration-of-healthcare-and-medical-education-drawing-chart-of-human-lungs-for-science-biology-study"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\lg.jpg" alt="Picture of Lungs"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <h2>Eye</h2>
+    <section>
+      <figure>
+      <a href="https://www.health.harvard.edu/staying-healthy/5-truths-about-protecting-your-eyes"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\ey.jpg" alt="Picture of eye"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <h2>Kidney</h2>
+    <section>
+      <figure>
+      <a href="https://www.bouldermedicalcenter.com/kidney-stones-nephrolithiasis/"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\kd.jpg" alt="Picture of kidney"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <h2>liver</h2>
+    <section>
+      <figure>
+      <a href="https://www.niddk.nih.gov/health-information/liver-disease/cirrhosis/definition-facts"><img src="C:\Users\Smile Always\Desktop\html\Rainbowdeserts\lr.jpg" alt="Picture of Liver"></a>
+      <figcaption>click image to see relevent content</figcaption></figure>
+    </section>
+    <form>
+          <input type="text" name="Human Organs" placeholder="Feedback" required>
+          <button type="submit">Submit</button>
+      </form>
+    </main>
+    <section>
+    <p><a href="C:\Users\Smile Always\html\Form.html" target="_blanck">Organ Donation Form</a></p>
+    </section>
+
+  </body>
+  <footer>
+    <p>No Copyright - <a href="file:///C:/Users/Smile%20Always/html/BAsichtmlPage.html">Human Organs</a></p>
+  </footer>
+</html>
