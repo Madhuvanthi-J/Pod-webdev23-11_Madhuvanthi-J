@@ -1,0 +1,39 @@
+body{
+    background-image:url('backgd.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:white;
+    font-family: 'Lucida Sans';
+   
+}
+
+h1
+{
+    font-size:40px;
+}
+h2
+{
+    font-size:30px;
+}
+form{
+    background-color: rgb(5, 34, 68);
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5px;
+    padding:20px;
+    max-width: 800px;
+    border:5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    
+}
+
+button{
+    color: black;
+}
+button:visited{
+    color: green;
+}
+button:active{
+    color: rgb(6, 249, 91);
+}
