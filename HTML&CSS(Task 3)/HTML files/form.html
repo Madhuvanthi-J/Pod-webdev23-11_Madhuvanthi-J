@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="c:\Users\madhu\OneDrive\Desktop\webpage\form.css">
+    <link rel="icon" type="image/x-icon" href="C:\Users\madhu\OneDrive\Desktop\webpage\webpage pic\faviconn.jpeg">
+    </head>
+    <body>
+    <h1 align="Center">Registration Form for Volunteers</h1><hr>
+    <form autocomplete="on" action="C:\Users\madhu\OneDrive\Desktop\webpage\conform.html" target="_blanck">
+    <ol>
+        <li>User Name</li>
+            <ul>
+                <div class="namelist">
+                <li>Enter your <label for="fname">FirstName</label>
+                <input type="text" id="fname" name="Userfirstname" ></li><br>
+                <li>Enter your <label for="lname">LastName</label>
+                <input type="text" id="lname" name="userlastname" ></li>
+                </div>
+            </ul>
+        <li>Gender</li>
+            <ul>
+                <div class="gender">
+                <input type="radio" id="male" name="gender" value="">
+                <label for="male">Male</label><br>
+                <input type="radio" id="fmale" name="gender" value="">
+                <label for="fmale">Female</label><br>
+                <input type="radio" id="lgbt" name="gender" value="">
+                <label for="lgbt">LGBT</label>
+                </div>
+            </ul>
+        <li>Email ID Details</li>
+            <ul>
+                <div>
+                <li><label for="email">Enter your Email ID</label>
+                <input type="email" id="email" name="emailID"></li><br>
+                </div>
+            </ul>
+         <li>Date of Birth</li>
+            <ul>
+                <div>
+                <li><label for="bday">Enter your Date of Birth</label>
+                <input type="date" id="bday" name="dateofbirth" ></li><br>
+                </div>
+            </ul>
+         <li>Blood Group</li>
+            <ul>
+                <div class="blood">
+                <select id="bgroup" name"bgroup" size="4" multiple>
+                <option value="o+ve"">O+ve</option>
+                <option value="A+ve"">A+ve</option>
+                <option value="B+ve"">B+ve</option>
+                <option value="AB+ve"">AB+ve</option>
+                <option value="A-ve"">A-ve</option>
+                <option value="B-ve"">B-ve</option>
+                <option value="o-ve"">O-ve</option>
+                <option value="A1B+ve"">A1Bve</option>
+                <option value="A1B-ve"">A1B-ve</option></select><br>
+                </div>
+            </ul>
+        <li>Height</li>
+        <ul>
+        <div>
+        <li><label for="height">Enter your height</label>
+        <input type="text" id="height" name="heightinfeet"></li><br>
+        </div>
+        </ul>
+    <li>Weight</li>
+        <ul>
+        <div>
+        <li><label for="Weight">Enter your weight</label>
+        <input type="text" id="Weight" name="weightinlbs"></li><br>
+        </div>
+        </ul>
+    <li>Contact Number</li>
+       <ul>
+        <div>
+       <li><label for="phone1">Enter your phone number</label>
+           <input type="tel" id="phone1" name="ContactNumber"></li><br>
+        <li><label for="phone2">Enter your Alternate phone number</label>
+           <input type="tel" id="phone2" name="AlternateContactNumber"></li><br>
+        </div>
+       </ul>
+    <li>Address </li>
+       <ul>
+       <div>
+       <textarea name="address rows="8" cols="40">
+       </textarea>
+       </div>
+       </ul> 
+    <li><p>Once my death has been confirmed and the death certification has been released by a dotor.
+        i hereby give permission to donate:</p></li>
+        <div>
+        <input type="checkbox" id="all organ" name="organ" value="all organ">
+        <label for="all organ">all my organs and tissue</label><br>
+        <input type="checkbox" id="specific organ" name="organ" value="specificorgan">
+        <label for="specific organ">Specific organs and/or tissues</label><br>  
+        </div>
+    <li><p>I authorize you to use my organs/tissues for:</p></li>
+        <div>
+        <input type="checkbox" id="research" name="useorganfor" value="">
+        <label for="research">Research</label><br>
+        <input type="checkbox" id="transplant" name="useorganfor" value="">
+        <label for="transplant">Transplant</label><br>  
+        </div>
+    <li>Donor's Signature </li>
+       <div>
+       <textarea name="signature" rows="5" cols="40" ></textarea>
+       </div>
+       <div>
+        <label for="signeddate">Date od signing</label>
+        <input type="date" id="signeddate" name="dateofsign" min="2023-01-01" max="2023-12-31" ></li><br>
+        </div>
+    </ol>  
+        <div>
+        <p>By signing the form, I agree with all the information I have promised and guarantee its authenticity</p>
+        <button type="submit">SEND ORGAN DONATION FORM</button>
+        <button type="reset" >RESET</button>
+        </div>
+    </form>
+    </body>
+</html>
