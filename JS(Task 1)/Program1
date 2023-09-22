@@ -1,0 +1,98 @@
+1. Write a program in which create a function that takes three numbers and prints the second max.
+
+program:
+
+function SLN(n1,n2,n3){
+    if(n1>=n2 && n1>=n3){
+        if(n2>=n3){
+            console.log('second largest number:',n2);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n2>=n1 && n2>=n3){
+        if(n1>=n3){
+            console.log('second largest number:',n1);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n1>=n2){
+         console.log('second largest number:',n1);
+    }
+    else{
+        console.log('second largest number:',n2);
+    }
+    
+}SLN(1,2,3)
+
+//As a variation, make changes to use the Anonymous Function and store it in a variable to call it.
+
+program:
+
+let SLN=function (n1,n2,n3){
+    if(n1>=n2 && n1>=n3){
+        if(n2>=n3){
+            console.log('second largest number:',n2);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n2>=n1 && n2>=n3){
+        if(n1>=n3){
+            console.log('second largest number:',n1);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n1>=n2){
+         console.log('second largest number:',n1);
+    }
+    else{
+        console.log('second largest number:',n2);
+    }
+    
+}
+SLN(1,2,3)
+
+//As a variation, make changes to use Arrow Function.
+
+program:
+
+let SLN=(n1,n2,n3)=>{
+    if(n1>=n2 && n1>=n3){
+        if(n2>=n3){
+            console.log('second largest number:',n2);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n2>=n1 && n2>=n3){
+        if(n1>=n3){
+            console.log('second largest number:',n1);
+        }
+        else{
+            console.log('second largest number:',n3);
+        }
+    }
+    else if(n1>=n2){
+         console.log('second largest number:',n1);
+    }
+    else{
+        console.log('second largest number:',n2);
+    }
+    
+}
+SLN(1,2,3)
+
+output:
+
+second largest number: 2
+
+
+
