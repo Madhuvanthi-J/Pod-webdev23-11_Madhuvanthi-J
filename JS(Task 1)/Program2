@@ -1,0 +1,175 @@
+2. Write a program in which create a function that takes three numbers and prints the second max.
+ program:
+
+  function isPrime(n){
+    var i,j;
+    for(i=2;i<=n;i++){
+        count=0;
+        if(i==2){
+            console.log(i,'is Prime Number');// 2 is prime number
+        }
+        for( j=2;j<=i/j;j++){
+            if(i%j==0){
+                count=count+1;
+                console.log(i,'is not Prime Number')
+                break;
+            }
+        }
+        if(count==0 && i!=j ){
+            console.log(i,'is Prime Number')
+        }
+    }
+    return 0;
+}isPrime(100)
+
+//As a variation, make changes to use the Anonymous Function and store it in variable to call it.
+ program:
+ 
+ let isPrime=function(n){
+    var i,j;
+    for(i=2;i<=n;i++){
+        count=0;
+        if(i==2){
+            console.log(i,'is Prime Number');// 2 is prime number
+        }
+        for( j=2;j<=i/j;j++){
+            if(i%j==0){
+                count=count+1;
+                console.log(i,'is not Prime Number')
+                break;
+            }
+        }
+        if(count==0 && i!=j ){
+            console.log(i,'is Prime Number')
+        }
+    }
+    return 0;
+}
+isPrime(100) 
+
+//As a variation, make changes to use Arrow Function.
+program:
+
+ let isPrime=(n)=>{
+    var i,j;
+    for(i=2;i<=n;i++){
+        count=0;
+        if(i==2){
+            console.log(i,'is Prime Number');// 2 is prime number
+        }
+        for( j=2;j<=i/j;j++){
+            if(i%j==0){
+                count=count+1;
+                console.log(i,'is not Prime Number')
+                break;
+            }
+        }
+        if(count==0 && i!=j ){
+            console.log(i,'is Prime Number')
+        }
+    }
+    return 0;
+}
+isPrime(100)
+
+Output:
+
+2 is Prime Number
+3 is Prime Number
+4 is not Prime Number
+5 is Prime Number
+6 is not Prime Number
+7 is Prime Number
+8 is not Prime Number
+9 is not Prime Number
+10 is not Prime Number
+11 is Prime Number
+12 is not Prime Number
+13 is Prime Number
+14 is not Prime Number
+15 is not Prime Number
+16 is not Prime Number
+17 is Prime Number
+18 is not Prime Number
+19 is Prime Number
+20 is not Prime Number
+21 is not Prime Number
+22 is not Prime Number
+23 is Prime Number
+24 is not Prime Number
+25 is not Prime Number
+26 is not Prime Number
+27 is not Prime Number
+28 is not Prime Number
+29 is Prime Number
+30 is not Prime Number
+31 is Prime Number
+32 is not Prime Number
+33 is not Prime Number
+34 is not Prime Number
+35 is not Prime Number
+36 is not Prime Number
+37 is Prime Number
+38 is not Prime Number
+39 is not Prime Number
+40 is not Prime Number
+41 is Prime Number
+42 is not Prime Number
+43 is Prime Number
+44 is not Prime Number
+45 is not Prime Number
+46 is not Prime Number
+47 is Prime Number
+48 is not Prime Number
+49 is not Prime Number
+50 is not Prime Number
+51 is not Prime Number
+52 is not Prime Number
+53 is Prime Number
+54 is not Prime Number
+55 is not Prime Number
+56 is not Prime Number
+57 is not Prime Number
+58 is not Prime Number
+59 is Prime Number
+60 is not Prime Number
+61 is Prime Number
+62 is not Prime Number
+63 is not Prime Number
+64 is not Prime Number
+65 is not Prime Number
+66 is not Prime Number
+67 is Prime Number
+68 is not Prime Number
+69 is not Prime Number
+70 is not Prime Number
+71 is Prime Number
+72 is not Prime Number
+73 is Prime Number
+74 is not Prime Number
+75 is not Prime Number
+76 is not Prime Number
+77 is not Prime Number
+78 is not Prime Number
+79 is Prime Number
+80 is not Prime Number
+81 is not Prime Number
+82 is not Prime Number
+83 is Prime Number
+84 is not Prime Number
+85 is not Prime Number
+86 is not Prime Number
+87 is not Prime Number
+88 is not Prime Number
+89 is Prime Number
+90 is not Prime Number
+91 is not Prime Number
+92 is not Prime Number
+93 is not Prime Number
+94 is not Prime Number
+95 is not Prime Number
+96 is not Prime Number
+97 is Prime Number
+98 is not Prime Number
+99 is not Prime Number
+100 is not Prime Number
