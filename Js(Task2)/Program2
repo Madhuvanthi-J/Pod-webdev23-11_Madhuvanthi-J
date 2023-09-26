@@ -1,0 +1,24 @@
+//Write a program to create a function that will take an array of numbers and returns the second max.
+
+Program:
+
+function SLM(arr){
+    var F=0;
+    var S=0;
+    for(let i=0;i< arr.length;i++){
+        if(arr[i]>F){
+            S=F;
+            F=arr[i];
+        }
+        else if(arr[i]>S && arr[i]<F){
+            S=arr[i]
+        }
+    }
+    console.log('Second Largest Number is:',S);
+}
+let arr=[12,15,20,2,3,21]
+SLM(arr);
+
+Output:
+
+Second Largest Number is: 20
