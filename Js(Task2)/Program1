@@ -1,0 +1,30 @@
+//Write a program to create a rectangle class that has two properties for length and breadth and a few methods to calculate the area and perimeter. 
+
+Program:
+class Rectangle {
+    Rec_length;
+    Rec_breadth;
+    constructor(length, breadth) {
+      this.Rec_length = length;
+      this.Rec_breadth = breadth;
+    }
+
+    calculateArea() {
+        return this.Rec_length * this.Rec_breadth;
+      }
+    
+      calculatePerimeter() {
+        return 2 * (this.Rec_length + this.Rec_breadth);
+      }
+    }
+
+    var rectangle= new Rectangle(12,10);
+    var area = rectangle.calculateArea();
+    var perimeter = rectangle.calculatePerimeter();
+    console.log('Rectangle Area:',area);
+    console.log('Rectangle Perimeter:',perimeter);
+
+Output:
+Rectangle Area: 120
+Rectangle Perimeter: 44
+    
