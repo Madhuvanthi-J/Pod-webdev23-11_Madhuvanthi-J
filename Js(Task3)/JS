@@ -1,0 +1,7 @@
+code:
+
+function bgcolor(color)
+{
+    document.querySelector('.box').style.backgroundColor= color;
+}
+
