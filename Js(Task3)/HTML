@@ -1,0 +1,28 @@
+Task 3: Playing with colours
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="'UFT-8">
+        <meta name="'viewport content='width=device-width, initial-scale=1.0">
+        <title>Playing with color</title>
+        <link rel='icon' type="image/x-icon" href="E:\Maddy Documents\Playingwithcolor\color.jpeg">
+        <link rel="stylesheet" href="E:\Maddy Documents\Playingwithcolor\playwithcolor.css">
+        <script src="E:\Maddy Documents\Playingwithcolor\playwithcolor.js"></script>
+    </head>
+    <body>
+        <h1>Play with color</h1>
+        <div class="box">
+        <div class="btn">
+            <button onclick="bgcolor('Violet')" class="violetbutton" >Violet</button>
+        </div>
+        <div class="btn">
+            <button  onclick="bgcolor('purple')" class="purplebutton">Purple</button>
+        </div>
+        <div class="btn">
+            <button  onclick="bgcolor('pink')"class="pinkbutton">Pink</button>
+        </div>
+        </div>
+
+    </body>
+</html>
