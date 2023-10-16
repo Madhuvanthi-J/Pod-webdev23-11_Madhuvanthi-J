@@ -1,0 +1,32 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <title>Recipe App</title>
+     <!-- Stylesheet -->
+     <link rel="stylesheet" href="C:\Users\madhu\OneDrive\Desktop\Task4\Task4.css" />
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    
+  </header>
+  <body>
+    <div class="container">
+      <div class="search-container">
+        <input
+          type="text"
+          id="recipe-inp"
+          placeholder="Enter a Recipe name here..."
+        />
+        <button id="search-btn" >Search</button>
+      </div>
+      <div>
+      <div id="result">
+        <img src="C:\Users\madhu\OneDrive\Desktop\Task4\pic.jpeg" class="pik">
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="C:\Users\madhu\OneDrive\Desktop\Task4\Task4.js"></script>
+  </body>
+  </body>
+</html>
