@@ -1,0 +1,31 @@
+JS
+
+let result= document.getElementById('result');
+let searchbtn= document.getElementById('search-btn');
+let url='https://www.themealdb.com/api/json/v1/1/search.php?s=';
+searchbtn.addEventListener('click',()=>{
+    let recipeInp=document.getElementById('recipe-inp').value;
+    fetch(url+ recipeInp )
+            .then(response=>response.json())
+            .then((data)=>{
+            let Mymeal=data.meals[0];
+            console.log(Mymeal);
+            console.log(Mymeal.strMeal);
+            console.log(Mymeal.strArea);
+            console.log(Mymeal.strMealThumb);
+            console.log(Mymeal.strInstructions);
+            
+             result.innerHTML = `
+            <img src=${Mymeal.strMealThumb} class='menupik'>
+            <div class="details">
+                <h2 class='food'>${Mymeal.strMeal}</h2>
+                <h4>Recipe Area:${Mymeal.strArea}</h4>
+            </div>
+            <h3>Recipe</h3>
+            <p="instructions">${Mymeal.strInstructions}</p>
+            `;
+            })
+            .catch(() => {
+               result.innerHTML = `<h3>Invalid Input</h3>`;
+            });
+});
