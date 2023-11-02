@@ -1,0 +1,36 @@
+import "/style.css";
+
+//input
+var btn=document.querySelector('Button');
+var load=document.querySelector('.load');
+
+//clickcount
+
+var count=0;
+btn.addEventListener('click',()=>{
+  count++;
+  btn.innerHTML = 'Run ' + count ;
+
+
+//loading
+
+var time = setInterval(loading, 30);
+
+var width=0;
+function loading(){
+if(width>=100){
+  clearInterval(time);
+
+}
+else{
+  width = width + 1;
+  load.style.width = width + '%';
+}
+}
+ 
+  
+});
+
+
+
+
