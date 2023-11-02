@@ -1,0 +1,43 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+div{
+  width: 80%;
+  margin: 50px auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+div:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  text-align: left;
+  width: 90%;
+}
+
+progress {
+  height: 20px;
+  width: 90%;
+}
