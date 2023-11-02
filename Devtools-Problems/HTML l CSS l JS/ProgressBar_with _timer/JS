@@ -1,0 +1,20 @@
+import "/style.css"; 
+var lbl = document.getElementById('timer');
+var val = document.getElementById('load');
+var time = setInterval(loading, 1000);
+var timeval = 100;
+var count=0;
+function loading() {
+  
+  if (timeval > 0) {
+    timeval = timeval - 1;
+    count=count+1;
+    val.value = count;
+    lbl.innerHTML = timeval;
+  } 
+  
+  else {
+    clearInterval(time);
+  }
+
+}
