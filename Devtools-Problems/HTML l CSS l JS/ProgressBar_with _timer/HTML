@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devtools Tech Sandbox</title>
+  <meta charset="UTF-8" />
+  <!--if you want to import any external css then -->
+  <!-- use @import directive in the css file-->
+</head>
+
+<body>
+    <div class='pgbar'>
+      <p><span id='timer'>100</span> Seconds</p>
+      <progress id='load' value='0' max='100'></progress>
+    </div>
+  <!--do not remove-->
+  <script src="./index.js"></script>
+</body>
+
+</html>
