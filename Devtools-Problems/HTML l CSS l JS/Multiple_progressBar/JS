@@ -1,0 +1,70 @@
+
+import "/style.css";
+
+const btn = document.querySelector('button');//get button
+
+const box = document.querySelector('.box');//get box
+
+btn.addEventListener('click', () => {
+const bar = document.createElement('div');//create div-bar using js
+bar.className = 'bar';
+box.appendChild(bar);
+
+const load = document.createElement('div');//create div-load using js
+load.className = 'loading';
+bar.appendChild(load);
+
+const plpsbtn = document.createElement('Button');//play-pause button creation
+plpsbtn.id = 'play-pause';
+plpsbtn.className = 'play';
+box.appendChild(plpsbtn);
+
+var i = 0;//////for loading button up to 100% without overlapping
+var time; // declare time variable
+var width = 0; // initialize width variable
+
+plpsbtn.addEventListener("click", () => {
+  if (plpsbtn.className === 'play') {
+    startloading();
+  }
+
+  else {
+    stoploading(width);
+  }
+
+  //start loading function
+  function startloading() {
+    plpsbtn.className = 'pause';///plpsbtn now playing
+    if (i == 0) {
+      i = 1;
+      time = setInterval(loading, 300);// program for loading the progressbar
+      function loading() {
+
+        if (width >= 100) {
+          clearInterval(time);
+          i = 0;
+          plpsbtn.className = 'play';
+
+        }
+        else {
+          width = width + 1;
+          load.style.width = width + '%';
+        }
+      }
+    }
+  }
+
+  //stoploading function
+  function stoploading(width) {
+    plpsbtn.className = 'play';///by click symbol change
+
+    if (i == 1) {
+      clearInterval(time);
+      i = 0;
+      plpsbtn.className = 'play';
+      load.style.width = width + '%';
+    }
+  }
+
+});
+});
