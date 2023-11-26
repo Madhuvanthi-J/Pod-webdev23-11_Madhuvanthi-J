@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="v1.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>VOTING PAGE</title>
+    
+</head>
+<body>
+    <h1>VOTEING PAGE</h1>
+    <div class="container">
+        <div class="balancerank">
+            <div class="row" id="one">1</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('one')">Vote</button>
+                <button class="unvote-button" onclick="unvote('one')">Unvote</button>
+                <div class="progress-bar" id="progress-one"></div>
+            </div>
+            
+            <div class="row" id="two">2</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('two')">Vote</button>
+                <button class="unvote-button" onclick="unvote('two')">Unvote</button>
+                <div class="progress-bar" id="progress-two"></div>
+            </div>
+
+            <div class="row" id="three">3</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('three')">Vote</button>
+                <button class="unvote-button" onclick="unvote('three')">Unvote</button>
+                <div class="progress-bar" id="progress-three"></div>
+            </div>
+
+            <div class="row" id="four">4</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('four')">Vote</button>
+                <button class="unvote-button" onclick="unvote('four')">Unvote</button>
+                <div class="progress-bar" id="progress-four"></div>
+            </div>
+
+            <div class="row" id="five">5</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('five')">Vote</button>
+                <button class="unvote-button" onclick="unvote('five')">Unvote</button>
+                <div class="progress-bar" id="progress-five"></div>
+            </div>
+
+            <div class="row" id="six">6</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('six')">Vote</button>
+                <button class="unvote-button" onclick="unvote('six')">Unvote</button>
+                <div class="progress-bar" id="progress-six"></div>
+            </div>
+
+            <div class="row" id="seven">7</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('seven')">Vote</button>
+                <button class="unvote-button" onclick="unvote('seven')">Unvote</button>
+                <div class="progress-bar" id="progress-seven"></div>
+            </div>
+
+            <div class="row" id="eight">8</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('eight')">Vote</button>
+                <button class="unvote-button" onclick="unvote('eight')">Unvote</button>
+                <div class="progress-bar" id="progress-eight"></div>
+            </div>
+
+            <div class="row" id="nine">9</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('nine')">Vote</button>
+                <button class="unvote-button" onclick="unvote('nine')">Unvote</button>
+                <div class="progress-bar" id="progress-nine"></div>
+            </div>
+
+            <div class="row" id="ten">10</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('ten')">Vote</button>
+                <button class="unvote-button" onclick="unvote('ten')">Unvote</button>
+                <div class="progress-bar" id="progress-ten"></div>
+            </div>
+
+            <div class="row" id="eleven">11</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('eleven')">Vote</button>
+                <button class="unvote-button" onclick="unvote('eleven')">Unvote</button>
+                <div class="progress-bar" id="progress-eleven"></div>
+            </div>
+
+            <div class="row" id="twelve">12</div>
+            <div class="vote-section">
+                <button class="vote-button" onclick="vote('twelve')">Vote</button>
+                <button class="unvote-button" onclick="unvote('twelve')">Unvote</button>
+                <div class="progress-bar" id="progress-twelve"></div>
+            </div>
+        </div>
+        <!-- Logout Button -->
+        <button class="logout-button" onclick="logout()">Logout</button>
+        
+    </div>
+    <script src="v1.js"></script>
+</body>
+</html>
