@@ -1,24 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
-    <link href="C:\Users\ROG\Desktop\Hackathon\news.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        img{
-            height: 400px;
-            object-fit: contain;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <title>News-App</title>
+    <link
+        href="C:\Users\madhu\OneDrive\Desktop\MINI_Hacathon\MINI_Hacathon.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script
+        type="text/javascript">WebFont.load({ google: { families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Inter:100,200,300,regular,500,600,700,800,900:cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese", "Inria Sans:300,300italic,regular,italic,700,700italic:latin,latin-ext"] } });</script>
+    
 </head>
-<body>
-    <div class="container">
-        <h1>News App</h1>
-        <div id="output"></div>
-        <p id="copyright"></p>
-    </div>
-    <script src="C:\Users\ROG\Desktop\Hackathon\news.js"></script>
+
+<body class="body">
+     <!--Heading-->
+    <section class="box">
+        <div class="Headings">
+            <div class="text-block">NewsAPI</div>
+            <img src="https://assets-global.website-files.com/6572ca92ed83f9fc06ae32da/657d85df89d3663accf8b8b1_Ellipse%201.png"
+                loading="lazy" width="20" height="20" alt="" class="image-3" />
+            <div class="text-block-7">Org</div>
+        </div>
+    </section>
+     <!--horizondal line-->
+    <div class="div-block-12"></div>
+    
+     <!-- Add a search bar here -->
+<input type="text" id="searchBar" placeholder="Search...">
+<button onclick="searchNews()">Search</button>
+
+<!-- Display "Top News" initially -->
+<div id="newsType" style="color: red; font-size: 20px; margin-top: 10px;">Top News</div>
+
+<!-- News content box -->
+<section id="output" class="content">
+    <!-- News content will be displayed here -->
+</section>
+
+    <!--footer-->
+    <section class="footer-light">
+        <div class="footer-divider-two"></div>
+        <div class="footer-bottom">
+            <div class="footer-div">
+                <div class="text-footer_div">
+                    <div class="text-block-9">NewsAPI</div>
+                    <img src="https://assets-global.website-files.com/6572ca92ed83f9fc06ae32da/657d85df89d3663accf8b8b1_Ellipse%201.png" loading="lazy" alt="" height="8" />
+                    <div class="footer-copyright">Org  is not responsible for the content of external sites</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="C:\Users\madhu\OneDrive\Desktop\MINI_Hacathon\MINI_Hacathon.js"
+        type="text/javascript"></script>
 </body>
+
 </html>
