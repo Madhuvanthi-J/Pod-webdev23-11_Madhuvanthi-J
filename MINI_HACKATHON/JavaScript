@@ -1,29 +1,23 @@
-const apiKey = 'DLxaLENiZb2GzcLaF0bzrnHAMOL7QXzv';
-const topNewsUrl = `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${apiKey}`;
-
-async function getNews(url) {
+async function getNews() {
     try {
-        const response = await fetch(url);
+        const response = await fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=DLxaLENiZb2GzcLaF0bzrnHAMOL7QXzv');
         const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
 
-async function displayNews(url) {
-    const newsType = document.getElementById('newsType');
-    const output = document.getElementById('output');
-    output.innerHTML = '';
-
-    const data = await getNews(url);
-
-    if (data) {
+        // Update the news type text
+        const newsType = document.getElementById('newsType');
         newsType.innerText = 'Top News';
 
+        // Clear existing content
+        const output = document.getElementById('output');
+        output.innerHTML = '';
+
+        // Display results in a 3x3 grid
         for (let i = 0; i < Math.min(9, data.results.length); i++) {
             const article = data.results[i];
-            const imageUrl = article.media[0]?.['media-metadata'][2]?.url || 'https://via.placeholder.com/150';
+
+            // Check if there is a multimedia element
+            const multimedia = article.media.find(item => item.type === 'image');
+            const imageUrl = multimedia ? multimedia['media-metadata'][2].url : 'https://via.placeholder.com/150';
 
             output.innerHTML += `
                 <div class="card">
@@ -38,19 +32,60 @@ async function displayNews(url) {
                 </div>
             `;
         }
-    } else {
-        output.innerHTML = '<p>Failed to fetch news.</p>';
+    } catch (error) {
+        console.error('Error fetching data:', error);
     }
 }
 
-// Fetch and display top news on page load
-displayNews(topNewsUrl);
+// Call the getNews function to fetch and display news
+getNews();
+
 
 async function searchNews() {
     const searchTerm = document.getElementById('searchBar').value;
-    const searchUrl = searchTerm
-        ? `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=${apiKey}`
-        : topNewsUrl;
+    const apiUrl = searchTerm
+        ? `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=DLxaLENiZb2GzcLaF0bzrnHAMOL7QXzv`
+        : 'https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=DLxaLENiZb2GzcLaF0bzrnHAMOL7QXzv';
 
-    displayNews(searchUrl);
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        // Update the news type text based on the search
+        const newsType = document.getElementById('newsType');
+        newsType.innerText = searchTerm ? `Top News from "${searchTerm}"` : 'Top News';
+
+        // Clear existing content
+        const output = document.getElementById('output');
+        output.innerHTML = '';
+
+        if (data.response.docs && data.response.docs.length > 0) {
+            // Display search results in a 3x3 grid
+            for (let i = 0; i < Math.min(9, data.response.docs.length); i++) {
+                const article = data.response.docs[i];
+
+                // Check if there is a multimedia element
+                const multimedia = article.multimedia.find(item => item.type === 'image');
+                const imageUrl = multimedia ? `https://www.nytimes.com/${multimedia.url}` : 'https://via.placeholder.com/150'; // Use a placeholder image if no image is available
+
+                output.innerHTML += `
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="${imageUrl}" alt="${article.headline.main}" style="width: 100%; height: auto;">
+                            <h2 class="card-title">${article.headline.main}</h2>
+                            <div class="card-text">
+                            <p>${article.abstract}</p>
+                            <a href="${article.web_url}" class="read-more" target="_blank">Read Full Article</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        } else {
+            // No results found
+            output.innerHTML = '<p>No results found for the given search term.</p>';
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 }
