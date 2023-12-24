@@ -1,0 +1,165 @@
+.text-block-10, .text-block-7{
+    color: var(--Dark, #3C3030);
+    font-family: Iowan Old Style;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.image-3{
+    width: 60.291px;
+    height: 60.291px;
+}
+
+.Headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.div-block-12 {
+    width: 100%;
+    height: 4px;
+    border: 1px solid #3c3030;
+}
+
+.navbar{
+    width: 327px;
+    height: 61px;
+}
+
+.mg-specs{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.footer-wrapper-two {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-block-two {
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-social-block-two {
+    margin-top: 20px;
+}
+
+.footer-div {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding-top: 59px;
+    padding-bottom: 58px;
+}
+
+.text-block{
+    font-size: 35.957px;
+}
+
+.text-footer_div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-light {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e4ebf3;
+    padding: 0;
+    position: relative;
+}
+
+.footer-divider-two {
+    width: 100%;
+    height: 1px;
+    background-color: #e4ebf3;
+    border: 1px solid #3c3030;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 20px;
+    color: #3a4554;
+    line-height: 140%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.content {
+    font-family: Arial, sans-serif;
+    margin: 0 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text p {
+    margin: 0;
+}
+
+.read-more {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.read-more::after {
+    content: ' →';
+    color: red;
+    margin-left: 5px;
+    display: inline-block;
+    text-decoration: underline;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.card-text p {
+    margin: 0;
+}
